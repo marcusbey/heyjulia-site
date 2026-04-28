@@ -96,10 +96,10 @@
         float keep = step(0.45, n);
         dot *= keep;
 
-        vec3 night    = vec3(0.039, 0.035, 0.031);
+        vec3 night    = vec3(0.039, 0.039, 0.055);
         vec3 dotCol   = vec3(1.000, 0.537, 0.012);
         vec3 accentA  = vec3(1.000, 0.420, 0.000);
-        vec3 accentB  = vec3(0.620, 0.260, 0.000);
+        vec3 accentB  = vec3(0.243, 0.247, 0.494);
 
         float accT = smoothstep(0.55, 0.95, n);
         vec3 dotMix = mix(dotCol, mix(accentA, accentB, fract(t * 0.3 + uv.x)), accT * 0.45);
