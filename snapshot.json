@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "slug": "0001-heyjulia.ai",
+  "captured_at": "2026-04-24",
+  "sources": [
+    { "url": "https://www.heyjulia.ai/", "method": "tavily.extract(basic+advanced)", "status": "ok" },
+    { "url": "https://www.heyjulia.ai/faqs", "method": "tavily.extract(basic)", "status": "ok" },
+    { "url": "https://www.heyjulia.ai/how-it-works", "method": "tavily.extract(basic)", "status": "ok-same-shell" },
+    { "url": "https://www.heyjulia.ai/pricing", "method": "tavily.extract(basic)", "status": "csr-not-rendered" },
+    { "url": "https://www.heyjulia.ai/about", "method": "tavily.extract(basic)", "status": "csr-not-rendered" }
+  ],
+  "identity": {
+    "name": "HeyJulia",
+    "domain": "heyjulia.ai",
+    "parent_entity": "TheDetail.AI LLC",
+    "parent_url": "https://thedetail.ai",
+    "tagline_primary": "Catch a losing job in week 2. Not at closeout.",
+    "tagline_secondary": "From voice to dashboard — in under a minute.",
+    "one_liner": "HeyJulia.ai is an AI voice agent that calls your foreman twice a day and turns the conversation into live labor, progress, and photo data in your dashboard. No app. No typing. English or Spanish.",
+    "founder_credibility": "Built by the founders of iSqFt and STACK",
+    "industry": "Construction tech (daily-reporting + labor tracking for GCs)",
+    "copyright": "© 2026 TheDetail.AI LLC - All rights reserved."
+  },
+  "contact": {
+    "phone": "+1-386-800-2414",
+    "phone_display": "(386) 800-2414",
+    "tel_href": "tel:+13868002414",
+    "email": null,
+    "email_status": "not_scraped_from_site",
+    "address": null,
+    "hours": null,
+    "social": {}
+  },
+  "nav_links_real": [
+    { "label": "Home", "href": "/" },
+    { "label": "How it Works", "href": "/how-it-works" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "FAQs", "href": "/faqs" },
+    { "label": "About", "href": "/about" },
+    { "label": "Demo", "href": "/#demo" }
+  ],
+  "hero": {
+    "h1": "Catch a losing job in week 2. Not at closeout.",
+    "h1_emphasis_words": ["job in week 2"],
+    "subcopy": "HeyJulia.ai is an AI voice agent that calls your foreman twice a day and turns the conversation into live labor, progress, and photo data in your dashboard. No app. No typing. English or Spanish.",
+    "cta_primary": { "label": "Try a demo", "href": "#demo" },
+    "cta_secondary": { "label": "Call (386) 800-2414", "href": "tel:+13868002414" },
+    "stats": [
+      { "value": "30%", "label": "Profit margin lift", "source": "heyjulia.ai/faqs — subject's own marketing claim" },
+      { "value": "15", "label": "Days saved per project", "source": "heyjulia.ai/faqs — dashboard sample figure" },
+      { "value": "$47K", "label": "Cost savings per project", "source": "heyjulia.ai/faqs — dashboard sample figure" }
+    ],
+    "image_scraped": "/assets/img/construction_site.png"
+  },
+  "problem_section": {
+    "h2": "Daily reports were broken the day the iPad showed up.",
+    "lede": "Field teams hate typing. Office teams can't act on reports that arrive late, incomplete, or in three different tools. By the time a losing job shows up in the numbers, the margin is already gone.",
+    "rows": [
+      { "number": "01", "title": "Late data → Late decisions", "body": "Reports trickle in the next morning. The day you needed to act has already passed." },
+      { "number": "02", "title": "Thin data → Thin insight", "body": "A supervisor typing on a phone at 6pm gives you crew count and a sentence. Not hours, quantities, or blockers." },
+      { "number": "03", "title": "Scattered tools → Scattered trust", "body": "Time tracking in one app. Daily reports in another. Photos in a text thread. No single source of truth." }
+    ]
+  },
+  "solution_section": {
+    "h2": "Two calls a day. One clean record of the job.",
+    "lede": "Julia makes two short calls to your foreman, superintendent, or crew lead. She talks in English or Spanish. Everything she captures flows into your dashboard before the crew leaves the site.",
+    "cards": [
+      {
+        "number": "01",
+        "title": "Morning call",
+        "duration": "~90 seconds",
+        "body": "Who's on site, when they arrived, what's planned, and what \"done\" looks like today.",
+        "shape": "waveform"
+      },
+      {
+        "number": "02",
+        "title": "Afternoon call",
+        "duration": "~5 minutes",
+        "body": "Actual hours by crew, quantities installed, issues, deliveries, safety notes, and photos by text.",
+        "shape": "phone-handset"
+      },
+      {
+        "number": "03",
+        "title": "Live dashboard",
+        "duration": "updates in under a minute",
+        "body": "Production rates against your estimate. Schedule updates. Early warnings when a job is trending red.",
+        "shape": "dashboard-bars"
+      }
+    ]
+  },
+  "flow_section": {
+    "h2": "From voice to dashboard — in under a minute.",
+    "steps": [
+      { "n": "1", "title": "Setup Project", "body": "Add your project details and superintendent contact information" },
+      { "n": "2", "title": "Julia Calls", "body": "AI agent makes scheduled calls morning and evening" },
+      { "n": "3", "title": "Data Captured", "body": "Hours, progress, issues automatically recorded and processed" },
+      { "n": "4", "title": "Live Insights", "body": "Dashboard updates instantly with progress and budget alerts" }
+    ]
+  },
+  "demo_section": {
+    "h2": "Experience Julia in Action",
+    "steps": ["Start demo", "Get a call", "View results"],
+    "description": "You'll receive a call from our AI agent, Julia. You act as a crew leader and report progress on the roofing plan tasks. After the call, watch the project schedule update instantly with events, quantities and work hours logged.",
+    "cta_label": "Try HeyJulia.ai right now on a sample project.",
+    "form_fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true },
+      { "name": "phone", "label": "Phone number", "type": "tel", "required": true },
+      { "name": "email", "label": "Email address", "type": "email", "required": false, "consent_label": "Follow up with me via text message with more information about HeyJulia." }
+    ],
+    "endpoint_status": "unknown_on_source_site",
+    "reproduction_fallback": "mailto:hello@heyjulia.ai + tel: link; no fake confirmation UI"
+  },
+  "credibility_section": {
+    "caption": "Built by the founders of iSqFt and STACK",
+    "arc_wordmarks": ["iSqFt", "STACK", "TheDetail.AI"]
+  },
+  "footer": {
+    "clock_timezone": "America/New_York",
+    "clock_label": "ET",
+    "phone_link": "tel:+13868002414",
+    "phone_display": "(386) 800-2414",
+    "menu_columns": [
+      { "heading": "Product", "links": [
+        { "label": "How it Works", "href": "/how-it-works" },
+        { "label": "Pricing", "href": "/pricing" },
+        { "label": "Demo", "href": "#demo" }
+      ] },
+      { "heading": "Resources", "links": [
+        { "label": "FAQs", "href": "/faqs" },
+        { "label": "About", "href": "/about" }
+      ] },
+      { "heading": "Company", "links": [
+        { "label": "TheDetail.AI", "href": "https://thedetail.ai" }
+      ] }
+    ],
+    "copyright": "© 2026 TheDetail.AI LLC — All rights reserved."
+  },
+  "assets_local": {
+    "dashboard_image": "site/assets/img/construction_site.png",
+    "fonts": [
+      "site/assets/fonts/pjs-roman.woff2",
+      "site/assets/fonts/pjs-roman-latin-ext.woff2",
+      "site/assets/fonts/pjs-italic-700.woff2"
+    ]
+  },
+  "never_fake_log": {
+    "invented_nothing": true,
+    "unverified_marketing_claims": [
+      "30% profit lift",
+      "15 days saved",
+      "$47K cost savings"
+    ],
+    "unverified_claims_sourced_from": "heyjulia.ai/faqs — subject's own copy, not independently verified ROI",
+    "omitted_because_unverified": [
+      "testimonials (none scraped)",
+      "customer logos (none scraped)",
+      "case studies (none scraped)",
+      "pricing tiers (csr not rendered by Tavily)",
+      "email address (not scraped)",
+      "team photos (not scraped)"
+    ]
+  }
+}

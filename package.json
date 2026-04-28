@@ -1,0 +1,12 @@
+{
+  "name": "0001-heyjulia.ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BASE32 Studio lead site — heyjulia.ai (AI voice agent for construction daily reports)",
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --directory site",
+    "preview": "python3 -m http.server 8000 --directory site",
+    "deploy": "./deploy.sh",
+    "deploy:prod": "./deploy.sh --prod"
+  }
+}

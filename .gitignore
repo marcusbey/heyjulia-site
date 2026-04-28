@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# secrets
+.env
+.env.*
+*.token
+*.key
+
+# pipeline state
+.omc/
+.claude/
+
+# deploy artifacts
+deploy_url.txt
+deploy_result.json
+.vercel/
+
+# node
+node_modules/
