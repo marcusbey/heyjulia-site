@@ -167,6 +167,7 @@
   /* How-it-works — rail-progress driven step swap            */
   /* ------------------------------------------------------- */
   const howRail = document.querySelector(".how__rail");
+  const howProgress = document.querySelector(".how__progress");
   const howSteps = Array.from(document.querySelectorAll(".how-step"));
   const howDots = Array.from(document.querySelectorAll(".how__progress li"));
   if (howRail && howSteps.length) {
@@ -186,17 +187,39 @@
       requestAnimationFrame(() => {
         const r = howRail.getBoundingClientRect();
         const vh = window.innerHeight;
-        // progress: 0 when rail top hits viewport top, 1 when rail bottom hits viewport bottom
         const total = Math.max(1, r.height - vh);
         const p = Math.max(0, Math.min(1, -r.top / total));
-        // map progress to step idx 0..N-1; bias slightly so transitions feel timed
         const idx = Math.min(howSteps.length - 1, Math.floor(p * howSteps.length * 0.999));
         setActive(idx);
+        if (howProgress) howProgress.style.setProperty("--how-prog", (p * 100).toFixed(2) + "%");
         ticking = false;
       });
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+
+    /* mouse-tilt parallax on active mockup */
+    if (fine && !reduce) {
+      const stage = document.querySelector(".how__stage");
+      if (stage) {
+        stage.addEventListener("mousemove", (e) => {
+          const active = stage.querySelector(".how-step.is-active .how-step__mockup");
+          if (!active) return;
+          const r = active.getBoundingClientRect();
+          const cx = r.left + r.width / 2;
+          const cy = r.top + r.height / 2;
+          const dx = (e.clientX - cx) / r.width;
+          const dy = (e.clientY - cy) / r.height;
+          const rx = Math.max(-1, Math.min(1, dy)) * -3;
+          const ry = Math.max(-1, Math.min(1, dx)) * 4;
+          active.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg) scale(1)`;
+        }, { passive: true });
+        stage.addEventListener("mouseleave", () => {
+          const active = stage.querySelector(".how-step.is-active .how-step__mockup");
+          if (active) active.style.transform = "";
+        });
+      }
+    }
   }
 
   /* ------------------------------------------------------- */
